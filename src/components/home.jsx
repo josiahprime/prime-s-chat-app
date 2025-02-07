@@ -3,11 +3,7 @@ import MainLayout from "./layout/MainLayout";
 import FeedSection from "./feed/FeedSection";
 import ChatSection from "./chat/ChatSection";
 
-interface HomeProps {
-  initialTab?: string;
-}
-
-const Home = ({ initialTab = "feed" }: HomeProps) => {
+const Home = ({ initialTab = "feed" }) => {
   const [activeTab, setActiveTab] = useState(initialTab);
 
   return (
